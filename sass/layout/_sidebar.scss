@@ -1,0 +1,102 @@
+.sidebar {
+    
+    width:5rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    &__container {
+
+        position: fixed;
+        z-index: 1;
+        left: -100%;
+        top: 0;
+        visibility: hidden;
+        
+    }
+
+    &__navigation {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        // a {
+        //     text-decoration: none;
+        // }
+
+        // .tab {
+        //     padding-bottom: 3px;
+        //     font-size: 1.6rem;
+        //     text-decoration: none;
+        //     color: $color-light-grey;
+        //     margin-bottom: .5rem;
+    
+        //     &:hover{
+        //         color: $color-white;
+        //         border-bottom: 2px solid $color-secondary;
+        //     }
+        // }
+    }
+
+    &__contact{
+        
+        margin-bottom: 10rem;
+
+        .icon-box {
+            margin-top:1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .icon{
+                color: $color-light-grey;
+                font-size: 1.6rem;
+            }
+            
+        }
+    }
+
+    &__about{
+
+        margin-top: 5rem;
+
+        .portfolio-image {
+            width: 15rem;
+            border-radius: 50%;
+            border: 1px solid $color-secondary;
+    
+            img {
+                border:0;
+            }
+        }
+    }
+
+    
+}
+
+.active {
+    visibility: visible;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 25rem;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.transition{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }

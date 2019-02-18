@@ -1,0 +1,31 @@
+.footer {
+
+    background-color: #999;
+    color: #e8e8e8;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+
+    &__contact {
+        text-align: center;
+    }
+
+    .heading-quaternary{
+        margin-bottom: 2rem;
+    }
+
+    .icon-box {
+        margin-top:1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        .icon{
+            color: $color-light-grey;
+            font-size: 3rem;
+        }
+        
+    }
+
+    
+
+}

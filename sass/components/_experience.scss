@@ -1,0 +1,106 @@
+.experience {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+
+  &--work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 0;
+    height: 50%;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  &--education {
+    padding: 4rem 0 8rem 0;
+    display: flex;
+    background-color: #fbfbfb;
+    height: 55rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__job {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 3rem;
+
+    &:not(:last-child){
+      &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        background-color: #f9f9f9;
+        top: 90%;
+        left: 25%; 
+      }
+    }
+  }
+
+  &__image-box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--lhl {
+      width: 50rem;
+      height: 60rem;
+    }
+
+    &--huddol {
+      width: 50rem;
+      height: 30rem;
+    }
+
+    &--inovva {
+      width: 50rem;
+      height: 30rem;
+    }
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    .experience__image {
+      background-image: url("../../img/IMG_2240.jpg");
+      background-size: cover;
+      background-position: 50% 30%;
+      width: 50%;
+      height: 50%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .experience__about {
+    flex: 0 0 50%;
+
+    .heading-tertiary {
+      padding-bottom: 2rem;
+    }
+    &-title {
+      font-size: 2rem;
+    }
+
+    &-date {
+      font-size: 1.8rem;
+    }
+
+    &-role {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+}

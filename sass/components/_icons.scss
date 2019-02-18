@@ -1,0 +1,22 @@
+.menu-icon {
+  font-size: 2.5rem;
+  color: $color-black;
+  z-index: 10;
+
+  &__container {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    border: solid 1px #f8f8f8;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, .1);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

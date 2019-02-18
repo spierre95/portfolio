@@ -1,0 +1,19 @@
+.header {
+    height: 70vh;
+    background-image: linear-gradient(to left bottom, 
+    rgba(11, 136, 147, 0.507),
+    rgba(54, 0, 51, 0.507)),
+    url('../img/ash-edmonds-510566-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    position:relative;
+
+    &__text-box {
+        width: 100vh;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+    }
+}

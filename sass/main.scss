@@ -1,0 +1,28 @@
+
+//ABSTRACTS
+@import 'abstracts/variables';
+@import 'abstracts/utils';
+
+//BASE
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+
+//LAYOUT 
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+//COMPONENTS
+@import 'components/projects';
+@import 'components/icons';
+@import 'components/skills';
+@import 'components/composition';
+@import 'components/experience';
+@import 'components/bg-video';
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/navigation';
+
+//Pages 
+@import 'pages/home';

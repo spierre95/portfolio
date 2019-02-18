@@ -1,0 +1,28 @@
+
+section:not(.section__experience) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;  
+}
+
+.section__projects {
+    text-align: center;
+}
+
+.section__skills {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.section__experience{
+    text-align: center;
+    background-color: #efefef;
+    width: 100%;
+}
+
+.section__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary);
+}

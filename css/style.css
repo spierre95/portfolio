@@ -221,8 +221,11 @@ body {
   .project__links {
     display: flex;
     justify-content: center; }
+    .project__links a {
+      text-decoration: none; }
     .project__links-text {
       font-size: 2rem;
+      color: #000;
       flex: 0 1 25%; }
   .project__description {
     font-size: 1.6rem;
@@ -251,25 +254,20 @@ body {
     width: 100%;
     height: 55rem; }
 
-.menu-icon {
-  font-size: 2.5rem;
+.icon {
+  font-size: 1.6rem;
   color: #000;
-  z-index: 10; }
-  .menu-icon__container {
-    cursor: pointer;
-    position: absolute;
-    top: 3%;
-    left: 30%;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    border: solid 1px #f8f8f8;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
-    padding: 2px;
+  z-index: 10;
+  cursor: pointer; }
+  .icon__box {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    width: 100%;
+    height: 100%;
+    padding: 2px; }
+    .icon__box-link {
+      flex: 0 0 15%; }
 
 .skills {
   display: flex;
@@ -352,12 +350,18 @@ body {
     justify-content: center;
     background-color: #fff; }
   .experience--education {
-    padding: 4rem 0 8rem 0;
     display: flex;
+    flex-direction: column;
+    padding: 8rem 0 8rem 0;
     background-color: #fbfbfb;
-    height: 55rem;
+    height: 75rem;
     justify-content: center;
     width: 100%; }
+  .experience__school {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 8rem 4rem; }
   .experience__job {
     display: flex;
     flex-wrap: nowrap;
@@ -516,7 +520,6 @@ body {
   height: 10vh;
   width: 100%;
   z-index: 1000;
-  padding: 0 2rem;
   border-bottom: 1px solid #e8e8e8;
   box-shadow: 0 3px 5px rgba(37, 37, 37, 0.15); }
   .navigation__container {
@@ -524,7 +527,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-evenly; }
   .navigation__tab {
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -533,11 +536,6 @@ body {
     height: 10vh; }
     .navigation__tab a {
       text-decoration: none; }
-    .navigation__tab:hover {
-      background-color: #eee;
-      box-shadow: 0 3px 5px rgba(37, 37, 37, 0.15);
-      border-left: 1px solid #f9f9f9;
-      border-right: 1px solid #f9f9f9; }
   .navigation__link {
     padding-bottom: 5px;
     font-size: 1.6rem;

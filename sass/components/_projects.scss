@@ -41,8 +41,13 @@
     display: flex;
     justify-content: center;
 
+    a {
+      text-decoration: none;
+    }
+
     &-text {
       font-size: 2rem;
+      color: $color-black;
       flex: 0 1 25%;
     }
   }

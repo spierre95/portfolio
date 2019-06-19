@@ -22,6 +22,7 @@
     height: 50%;
     filter: brightness(95%);
     transition: all 0.5s ease-in-out;
+    background-position-x: 50%;
 
     &--1 {
       background-image: url("../img/recipe_app.png");

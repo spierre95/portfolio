@@ -24,7 +24,8 @@ body {
   box-sizing: border-box; }
 
 html, body {
-  min-width: 100%; }
+  min-width: 100%;
+  max-width: 100%; }
 
 body {
   font-family: "Lato", "sans-serif";
@@ -38,18 +39,27 @@ body {
     display: block;
     font-size: 5rem;
     font-weight: 300;
-    letter-spacing: 1rem;
+    letter-spacing: .8rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-  .heading-primary--sub {
+  .heading-primary--sub-job {
     color: #fff;
     display: block;
     font-size: 3rem;
     font-weight: 300;
-    letter-spacing: 1rem;
-    margin-bottom: 5rem;
+    letter-spacing: .8rem;
+    margin-bottom: 2rem;
     animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub-location {
+    color: #fff;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .8rem;
+    animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
 
@@ -103,13 +113,13 @@ body {
     transform: translate(0); } }
 
 .header {
-  height: 70vh;
+  height: 95vh;
   background-image: linear-gradient(to left bottom, rgba(11, 136, 147, 0.507), rgba(54, 0, 51, 0.507)), url("../img/ash-edmonds-510566-unsplash.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }
   .header__text-box {
-    width: 100vh;
+    width: 100vw;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -280,39 +290,27 @@ body {
       .icon__box-link .fa-envelope:hover {
         color: #000; }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.skills-contianer {
+  width: 75%;
   height: 100%;
-  text-align: center; }
-  .skills__box {
-    flex: 0 1 40%;
-    transform: skewX(-12deg); }
-    .skills__box:last-child {
-      margin-top: 2rem; }
-  .skills__card {
-    box-shadow: 0px 0px 5px grey;
-    border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 100%;
-    min-height: 30rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem; }
-  .skills__icon {
-    font-size: 8rem;
-    transform: skewX(12deg); }
-    .skills__icon--languages {
-      flex: 1 1 33%; }
-    .skills__icon--libraries {
-      flex: 1 1 33%; }
-    .skills__icon--data {
-      flex: 1 1 33%; }
-  .skills .heading-tertiary--skills {
-    transform: skew(12deg); }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto; }
+
+.skills-box {
+  width: 100%;
+  text-align: left; }
+
+.skill-name {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300; }
+
+.skill__container {
+  width: 75%;
+  margin: 0 auto; }
 
 .composition {
   position: relative;
@@ -356,14 +354,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 4rem 0;
+    padding: 4rem;
     height: 50%;
     justify-content: center;
     background-color: #fff; }
   .experience--education {
     display: flex;
     flex-direction: column;
-    padding: 8rem 0 8rem 0;
+    padding: 32rem 0 8rem 0;
     background-color: #fbfbfb;
     height: 75rem;
     justify-content: center;
@@ -397,6 +395,9 @@ body {
     .experience__image-box--huddol {
       width: 50rem;
       height: 30rem; }
+      .experience__image-box--huddol img {
+        padding: 3rem;
+        background-color: #6e6ad8; }
     .experience__image-box--inovva {
       width: 50rem;
       height: 30rem; }
@@ -432,7 +433,8 @@ body {
   width: 100%;
   z-index: -1;
   filter: brightness(80%);
-  object-fit: cover; }
+  object-fit: cover;
+  overflow: hidden; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -556,24 +558,39 @@ body {
     .navigation__link:hover {
       color: #4d606e; }
 
+.section-in-view span {
+  color: #000; }
+
+.scroll-line {
+  position: fixed;
+  height: 4px;
+  left: 0;
+  top: 75px;
+  background-color: #4d606e; }
+
 section:not(.section__experience) {
   padding-top: 8rem;
-  padding-bottom: 8rem; }
+  padding-bottom: 8rem;
+  position: relative; }
 
 .section__projects {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .section__skills {
   position: relative;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-image: linear-gradient(to right bottom, #4d606e, #4d606e); }
 
 .section__experience {
+  position: relative;
   text-align: center;
   background-color: #efefef;
   width: 100%; }
 
 .section__contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

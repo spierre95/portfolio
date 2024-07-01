@@ -22,23 +22,22 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="portfolio">
       <div class="navigation">
         <nav class="navigation__container">
           <div class="navigation__tab">
-            <a href="#projects-section"><span class="navigation__link">Projects</span></a>
+            <a id="projects-section-link" href="#projects-section"><span class="navigation__link">Projects</span></a>
           </div>
           <div class="navigation__tab">
-            <a href="#skills-section"><span class="navigation__link">Skills</span></a>
+            <a id="skills-section-link" href="#skills-section"><span class="navigation__link">Skills</span></a>
           </div>
           <div class="navigation__tab">
-            <a href="#experience-section"><span class="navigation__link">Experience</span></a>
+            <a id="experience-section-link" href="#experience-section"><span class="navigation__link">Experience</span></a>
           </div>
           <div class="navigation__tab">
-            <a href="#education-section"><span class="navigation__link">Education</span></a>
+            <a id="education-section-link" href="#education-section"><span class="navigation__link">Education</span></a>
           </div>
           <div class="navigation__tab">
-            <a href="#contact-section"><span class="navigation__link">Contact</span></a>
+            <a id="contact-section-link" href="#contact-section"><span class="navigation__link">Contact</span></a>
           </div>
           <div class="navigation__tab">
               <div class="icon__box">
@@ -48,13 +47,15 @@
                 </div>
           </div>
           </nav>
+          <div class="scroll-line"></div>
       </div>
       <main class="home-page">
         <header class="header">
           <div class="header__text-box">
             <h1 class="heading-primary">
               <span class="heading-primary--main">Stephen Pierre</span>
-              <span class="heading-primary--sub">Front End Web Developer</span>
+              <span class="heading-primary--sub-job">Web Developer</span>
+              <span class="heading-primary--sub-location"><i class="fas fa-map-marker-alt"></i> Montréal Quebec Canada</span>
             </h1>
           </div>
         </header>
@@ -215,90 +216,87 @@
           </div>
         </section>
         <section class="section__skills" id="skills-section">
-          <video class="bg-video" autoplay loop muted>
-            <source class="bg-video__content" src="img/background-video.mp4" />
-            <source class="bg-video__content" src="img/background-video.webm" />
-          </video>
-          <h1 class="heading-secondary white">Skills</h1>
-          <div class="skills">
-            <div class="skills__box">
-              <h3 class="heading-tertiary heading-tertiary--skills">
-                Languages
-              </h3>
-              <div class="skills__card">
-                <i
-                class="devicon-html5-plain-wordmark colored skills__icon skills__icon--languages"
-                ></i>
-                <i
-                class="devicon-css3-plain-wordmark colored skills__icon skills__icon--languages"
-                ></i>
-                <i
-                  class="devicon-javascript-plain colored skills__icon skills__icon--languages"
-                ></i>
-                <i class="devicon-php-plain colored skills__icon skills__icon--languages"></i>
-                <i
-                  class="devicon-ruby-plain-wordmark colored skills__icon skills__icon--languages"
-                ></i>
-              </div>
+          <h1 class="heading-secondary">Skills</h1>
+          <div class="skills-contianer">
+            <div class="skills-box">
+
+    
+            <div class="skill__container">
+                <h4 class="skill-name">html</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-hmtl"></span>
+                </div>
             </div>
-            <div class="skills__box">
-              <h3 class="heading-tertiary heading-tertiary--skills">
-                Frameworks, Libraries and Environments
-              </h3>
-              <div class="skills__card">
-                  <i
-                    class="devicon-react-original-wordmark colored skills__icon skills__icon--libraries"
-                  ></i>
-                  <i class="devicon-vuejs-plain-wordmark colored skills__icon skills__icon--libraries"></i>
-                  <i
-                    class="devicon-sass-original colored skills__icon skills__icon--libraries"
-                  ></i>
-                  <i
-                    class="devicon-bootstrap-plain-wordmark colored skills__icon skills__icon--libraries"
-                  ></i>
-                  <i
-                    class="devicon-jquery-plain-wordmark colored skills__icon skills__icon--libraries"
-                  ></i>
-                <i
-                  class="devicon-express-original-wordmark colored skills__icon skills__icon--libraries"
-                ></i>
-                <i
-                  class="devicon-nodejs-plain-wordmark colored skills__icon skills__icon--libraries"
-                ></i>
-                <i
-                  class="devicon-rails-plain-wordmark colored skills__icon skills__icon--libraries"
-                ></i>
-              </div>
+            <div class="skill__container">
+                <h4 class="skill-name">css</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-css"></span>
+                </div>
             </div>
-            <div class="skills__box">
-              <h3 class="heading-tertiary heading-tertiary--skills">
-                Databases, Systems, CMS
-              </h3>
-              <div class="skills__card">
-                  <i class="devicon-wordpress-plain-wordmark colored skills__icon skills__icon--data"></i>
-                <i
-                  class="devicon-git-plain-wordmark colored skills__icon skills__icon--data"
-                ></i>
-                <i
-                  class="devicon-github-plain-wordmark colored skills__icon skills__icon--data"
-                ></i>
-                <i
-                  class="devicon-visualstudio-plain colored skills__icon skills__icon--data"
-                ></i>
-                <i
-                  class="devicon-mongodb-plain-wordmark colored skills__icon skills__icon--data"
-                ></i>
-                <i
-                  class="devicon-postgresql-plain-wordmark colored skills__icon skills__icon--data"
-                ></i>
-              </div>
+            <div class="skill__container">
+                <h4 class="skill-name">javascript</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-javascript"></span>
+                </div>
             </div>
+            <div class="skill__container">
+                <h4 class="skill-name">React.js</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-react"></span>
+                </div>
+            </div>
+            <div class="skill__container">
+                <h4 class="skill-name">Vue.js</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-vue"></span>
+                </div>
+            </div>
+            <div class="skill__container">
+                <h4 class="skill-name">PHP</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-php"></span>
+                </div>
+            </div>
+            <div class="skill__container">
+                <h4 class="skill-name">Wordpress</h4>
+                <div class="skill__bar">
+                  <span class="skill__bar--level skill__bar--level-wordpress"></span>
+                </div>
+            </div>
+          </div>
+          </div>
           </div>
         </section>
         <section class="section__experience" id="experience-section">
           <div class="experience">
-              <h1 class="heading-secondary">Experience</h1>
+            <h1 class="heading-secondary">Experience</h1>
             <div class="experience--work">
+              <div class="experience__job">
+                <div class="experience__image-box experience__image-box--inovva ">
+                  <img
+                    src="https://igotchamedia.com/wp-content/uploads/2020/11/LOGO-iGotcha-Mobile.png?x19942"
+                    alt=""
+                  />
+                </div>
+                <div class="experience__about">
+                  <h3 class="heading-tertiary heading-tertiary--link">
+                    <a href="https://igotchamedia.com/" target="_blank">iGotcha Media</a>
+                  </h3>
+                  <div class="experience__about-title">
+                    Full Stack Developer
+                  </div>
+                  <div class="experience__about-date">
+                    October 2020 - Present
+                  </div>
+                  <ul class="experience__about-role">
+                    
+                      <li>Build various custom projects</li>
+                      <li>Fix bugs reported by QA.</li>
+                      <li>Implemented new features to the iGotchaSignage CMS, including a dynamic timeline view for deployments and several new dashboard widgets</li>
+                   
+                  </ul>
+                </div>
+              </div>
               <div class="experience__job">
                 <div class="experience__image-box experience__image-box--inovva ">
                   <img
@@ -311,7 +309,7 @@
                     <a href="https://www.inovva.com/en/" target="_blank">Inovva</a>
                   </h3>
                   <div class="experience__about-title">
-                    Web Integrator
+                    Web Developer
                   </div>
                   <div class="experience__about-date">
                     December 2018 - Present
@@ -324,7 +322,7 @@
               <div class="experience__job">
                 <div class="experience__image-box experience__image-box--huddol ">
                   <img
-                    src="https://pbs.twimg.com/profile_images/885135666358530049/HxpgrjMP_400x400.jpg"
+                    src="https://www.huddol.com/images/logo_original.svg"
                     alt=""
                   />
                 </div>
@@ -400,8 +398,7 @@
     </section>
         </section>
       </main>
-      </main>
-      <section class="sidebar">
+      <!-- <section class="sidebar">
         <div class="menu-icon__container">
             <i class="fas fa-bars menu-icon" onclick="`${toggleMenu()}`"></i>
         </div>
@@ -429,27 +426,31 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </section> -->
     <script type="text/javascript">
 
-    //toggles mobile menu 
-      function toggleMenu() {
-        setTimeout(() => {
-          document
-            .querySelector(".sidebar__container")
-            .classList.toggle("active");
-        }, 1000);
-      }
+//     //toggles mobile menu 
+//       function toggleMenu() {
+//         setTimeout(() => {
+//           document
+//             .querySelector(".sidebar__container")
+//             .classList.toggle("active");
+//         }, 1000);
+//       }
 
-    function isInViewport(elem) {
-    var bounding = elem.getBoundingClientRect();
-    return (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+    function isInViewport(el) {
+    // http://jsfiddle.net/W33YR/411/ didn't work ith just window object, this seems to fix it
+      var rect = el.getBoundingClientRect(), top = rect.top, height = rect.height, 
+    el = el.parentNode;
+  do {
+    rect = el.getBoundingClientRect();
+    if (top <= rect.bottom === false) return false;
+    // Check if the element is out of view due to a container scrolling
+    if ((top + height) <= rect.top) return false
+    el = el.parentNode;
+  } while (el != document.body);
+  // Check its within the document viewport
+  return top <= document.documentElement.clientHeight;
 };
 
     
@@ -465,12 +466,29 @@
 });
 
 function runOnScroll(element) {
-  // console.log(element.id, 'in on scroll');
+  var el = document.querySelector(`#${element.id}-link`)
   if(isInViewport(element)){
-    console.log(` element witht the id: ${element.id} is in the viewport`)
-    // let navLink = document.querySelectorAll(`a[href^="#${element.id}]"`)
-  } 
+    el.classList.add("section-in-view")
+    //add class 
+  } else {
+    console.log(el.classList, 'has class ' )
+    if(el.classList.contains('section-in-view')) {
+      el.classList.remove("section-in-view")
+    }
+  }
 };
+
+
+
+function fillScrollLine() {
+  var scrollLine = document.querySelector('.scroll-line');
+  var windowHeight = window.innerHeight;
+  var fullHeight = document.body.clientHeight;
+  var scrolled = window.scrollY;
+  var percentScrolled = (scrolled / (fullHeight - windowHeight) * 100);
+  scrollLine.style.width = percentScrolled + '%';
+  scrollLine.style.width = `${percentScrolled}%` ;
+}
 
 // grab elements as array, rather than as NodeList
 var elements = document.querySelectorAll("[id$=-section]");
@@ -478,13 +496,12 @@ elements = Array.prototype.slice.call(elements);
 
 // and then make each element do something on scroll
 elements.forEach(function(element) {
+  console.log(element)
   window.addEventListener("scroll", function () {
     runOnScroll(element)
+    fillScrollLine()
   });
 });
-
-
-
     </script>
   </body>
 </html>

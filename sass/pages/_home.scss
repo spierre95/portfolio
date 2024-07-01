@@ -1,25 +1,33 @@
 
+
+// set all section to postion relative, this is becasue I want the elements relative to the window object to be able to dected by the scroll 
+
 section:not(.section__experience) {
     padding-top: 8rem;
-    padding-bottom: 8rem;  
+    padding-bottom: 8rem; 
+    position: relative; 
 }
 
 .section__projects {
     text-align: center;
+    position: relative;
 }
 
 .section__skills {
     position: relative;
     width: 100%;
     text-align: center;
+    background-image: linear-gradient(to right bottom, #4d606e, #4d606e);
 }
 .section__experience{
+    position: relative;
     text-align: center;
     background-color: #efefef;
     width: 100%;
 }
 
 .section__contact {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;

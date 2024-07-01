@@ -42,3 +42,15 @@
         }
     }
 }
+
+.section-in-view span{
+    color: #000;
+}
+
+.scroll-line { 
+    position: fixed;
+    height: 4px;
+    left: 0; 
+    top: 75px;
+    background-color: $color-primary;
+}

@@ -12,22 +12,37 @@ body {
     display: block;
     font-size: 5rem;
     font-weight: 300;
-    letter-spacing: 1rem;
+    letter-spacing: .8rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
 
   &--sub {
-    color: $color-white;
-    display: block;
-    font-size: 3rem;
-    font-weight: 300;
-    letter-spacing: 1rem;
-    margin-bottom: 5rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+
+    &-job {
+      color: $color-white;
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: .8rem;
+      margin-bottom: 2rem;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+    }
+
+    &-location {
+      color: $color-white;
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: .8rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
   }
 }
 
